@@ -4,6 +4,8 @@ apiVersion: apps/v1
 metadata:
   name: sonarr
   namespace: sonarr
+  labels:
+    app: sonarr
 spec:
   replicas: 1
   selector:

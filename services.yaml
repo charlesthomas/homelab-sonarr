@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: sonarr
   namespace: sonarr
+  labels:
+    app: sonarr
 spec:
   type: ClusterIP
   ports:
@@ -20,6 +22,8 @@ metadata:
   annotations:
     external-dns.alpha.kubernetes.io/hostname: sonarrdb.crt.house
     metallb.universe.tf/address-pool: internal
+  labels:
+    app: postgres
 spec:
   type: LoadBalancer
   ports:
