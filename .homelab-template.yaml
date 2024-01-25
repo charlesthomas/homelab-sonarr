@@ -1,0 +1,23 @@
+_commit: v1.1.2-6-ga043912
+_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: false
+helm: false
+ingress: false
+labels: ''
+name: sonarr
+namespace: sonarr
+pvc: false
+resources:
+- backups.yaml
+- deployments.yaml
+- external-secrets.yaml
+- ingresses.yaml
+- pvcs.yaml
+- service-accounts.yaml
+- services.yaml
+- statefulsets.yaml
+service: false
+serviceAccount: false
+upstreamURL: https://sonarr.tv/
+url: https://github.com/charlesthomas/homelab-sonarr
