@@ -1,0 +1,33 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sonarr
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: sonarr.crt.house
+    external-dns.alpha.kubernetes.io/target: crt.house
+    nginx.org/websocket-services: sonarr
+    gethomepage.dev/href: sonarr.crt.house
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: TV Finder
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: sonarr
+    gethomepage.dev/name: Sonarr
+    gethomepage.dev/pod-selector: ""
+spec:
+  ingressClassName: nginx-crt-house
+  rules:
+    - host: "sonarr.crt.house"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: sonarr
+                port:
+                  number: 8989
+  tls:
+    - hosts:
+      - sonarr.crt.house
+      secretName: 
