@@ -5,7 +5,6 @@ metadata:
   name: sonarr
   annotations:
     external-dns.alpha.kubernetes.io/hostname: sonarr.crt.house
-    external-dns.alpha.kubernetes.io/target: 
     nginx.org/websocket-services: sonarr
     gethomepage.dev/href: sonarr.crt.house
     gethomepage.dev/enabled: "true"
