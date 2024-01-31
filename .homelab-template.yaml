@@ -16,7 +16,7 @@ ingPathType: Prefix
 ingSecret: ''
 ingWebSockets: true
 ingress: true
-labels: 'app: sonarr'
+labels: ''
 name: sonarr
 namespace: sonarr
 pvc: false

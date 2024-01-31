@@ -5,8 +5,6 @@ namespace: sonarr
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-sonarr
-commonLabels:
-  app: sonarr
 
 resources:
 - resources/backups.yaml
