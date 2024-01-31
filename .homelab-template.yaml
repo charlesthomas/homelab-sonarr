@@ -1,13 +1,25 @@
-_commit: v1.1.2-6-ga043912
+_commit: v1.1.2-14-gf17f10c
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
 helm: false
-ingress: false
-labels: ''
+homepageDescription: TV Finder
+homepageEnabled: true
+homepageGroup: Media
+homepageIcon: sonarr
+homepageName: Sonarr
+ingClass: nginx-crt-house
+ingExtraAnnotations: ''
+ingHost: sonarr.crt.house
+ingName: sonarr
+ingPathType: Prefix
+ingWebSockets: true
+ingress: true
+labels: 'app: sonarr'
 name: sonarr
 namespace: sonarr
 pvc: false
+reloader: true
 resources:
 - backups.yaml
 - deployments.yaml
@@ -19,5 +31,7 @@ resources:
 - statefulsets.yaml
 service: false
 serviceAccount: false
+svcName: sonarr
+svcPortNum: 8989
 upstreamURL: https://sonarr.tv/
 url: https://github.com/charlesthomas/homelab-sonarr
