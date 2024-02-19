@@ -9,6 +9,7 @@ homepageGroup: Media
 homepageIcon: sonarr
 homepageName: Sonarr
 ingClass: nginx-crt-house
+ingCname: ''
 ingExtraAnnotations: ''
 ingHost: sonarr.crt.house
 ingName: sonarr
