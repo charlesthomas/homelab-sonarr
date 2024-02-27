@@ -18,7 +18,7 @@ spec:
     spec:
       dnsConfig:
         nameservers:
-        - 192.168.1.8
+        - 10.43.0.10
       dnsPolicy: None
       initContainers:
       - name: cp-config

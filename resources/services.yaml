@@ -19,13 +19,10 @@ kind: Service
 metadata:
   name: postgres
   namespace: sonarr
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: sonarrdb.crt.house
-    metallb.universe.tf/address-pool: internal
   labels:
     app: postgres
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - name: postgres
       port: 5432
