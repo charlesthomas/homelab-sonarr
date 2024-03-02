@@ -4,3 +4,6 @@ updates:
     directory: "/resources/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: postgres
+        update-types: ["version-update:semver-major"]
