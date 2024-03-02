@@ -28,7 +28,7 @@ spec:
       hostNetwork: false
       containers:
         - name: postgres
-          image: postgres:14.10
+          image: postgres:14.11
           imagePullPolicy: IfNotPresent
           securityContext:
             allowPrivilegeEscalation: false
