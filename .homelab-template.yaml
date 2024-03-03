@@ -1,4 +1,4 @@
-_commit: v1.6.2
+_commit: v1.6.8
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -8,13 +8,12 @@ homepageEnabled: true
 homepageGroup: Media
 homepageIcon: sonarr
 homepageName: Sonarr
-ingClass: nginx-crt-house
+ingClass: nginx-internal
 ingCname: ''
 ingExtraAnnotations: ''
 ingHost: sonarr.crt.house
 ingName: sonarr
 ingPathType: Prefix
-ingSecret: ''
 ingWebSockets: true
 ingress: true
 labels: ''
