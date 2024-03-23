@@ -37,3 +37,19 @@ patches:
         reloader.stakater.com/auto: "true"
   target:
     kind: StatefulSet
+- patch: |-
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: sonarr
+      namespace: sonarr
+      annotations:
+        gethomepage.dev/href: https://sonarr.crt.house
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: TV Finder
+        gethomepage.dev/group: Media
+        gethomepage.dev/icon: sonarr
+        gethomepage.dev/name: Sonarr
+        gethomepage.dev/pod-selector: ""
+  target:
+    kind: Ingress
