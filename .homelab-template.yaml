@@ -1,13 +1,9 @@
-_commit: v1.6.8
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
 helm: false
-homepageDescription: TV Finder
 homepageEnabled: true
-homepageGroup: Media
-homepageIcon: sonarr
-homepageName: Sonarr
 ingClass: nginx-internal
 ingCname: ''
 ingExtraAnnotations: ''
