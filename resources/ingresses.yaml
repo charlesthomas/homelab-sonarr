@@ -3,6 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: sonarr
+  namespace: sonarr
   annotations:
     external-dns.alpha.kubernetes.io/hostname: sonarr.crt.house
     nginx.org/websocket-services: sonarr
