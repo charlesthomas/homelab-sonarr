@@ -1,7 +1,7 @@
 _commit: v1.11.1
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
-backups: false
+backups: true
 helm: false
 homepageDescription: TV Finder
 homepageEnabled: true
