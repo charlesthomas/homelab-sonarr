@@ -23,6 +23,7 @@ spec:
       initContainers:
       - name: cp-config
         image: alpine:latest
+        resources: {}
         volumeMounts:
           - name: sonarr-config
             mountPath: /tmp/sonarr-config
