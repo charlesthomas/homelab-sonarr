@@ -7,7 +7,6 @@ commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-sonarr
 
 resources:
-- resources/backups.yaml
 - resources/deployments.yaml
 - resources/external-secrets.yaml
 - resources/ingresses.yaml

@@ -1,7 +1,7 @@
 _commit: v1.12.1-6-gbf0c0a5
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
-backups: true
+backups: false
 helm: false
 homepageDescription: TV Finder
 homepageEnabled: true
@@ -22,7 +22,6 @@ namespace: sonarr
 pvc: false
 reloader: true
 resources:
-- backups.yaml
 - deployments.yaml
 - external-secrets.yaml
 - ingresses.yaml
