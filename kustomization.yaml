@@ -15,6 +15,14 @@ resources:
 - resources/service-accounts.yaml
 - resources/services.yaml
 - resources/statefulsets.yaml
+
+images:
+  - name: postgres
+    newTag: "14.15"
+  - name: sonarr
+    newName: ghcr.io/linuxserver/sonarr
+    newTag: 4.0.12.2823-ls265
+
 patches:
 - patch: |-
     apiVersion: apps/v1
