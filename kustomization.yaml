@@ -21,7 +21,7 @@ images:
     newTag: "14.15"
   - name: sonarr
     newName: ghcr.io/linuxserver/sonarr
-    newTag: 4.0.13.2932-ls271
+    newTag: 4.0.14.2939-ls275
 
 patches:
 - patch: |-
