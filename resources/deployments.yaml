@@ -61,7 +61,7 @@ spec:
           mountPath: /mnt/tv
         resources:
           limits:
-            memory: 700Mi
+            memory: 1Gi
           requests:
             memory: 350Mi
         readinessProbe:
