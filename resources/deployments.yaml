@@ -62,8 +62,6 @@ spec:
         resources:
           limits:
             memory: 1Gi
-          requests:
-            memory: 350Mi
         readinessProbe:
           tcpSocket:
             port: sonarr
