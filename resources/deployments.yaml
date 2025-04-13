@@ -53,12 +53,8 @@ spec:
         volumeMounts:
         - name: sonarr
           mountPath: /config
-        - name: complete
-          mountPath: /mnt/complete
-        - name: critical-tv
-          mountPath: /mnt/critical-tv
-        - name: tv
-          mountPath: /mnt/tv
+        - name: media
+          mountPath: /mnt/media
         resources: {}
         readinessProbe:
           tcpSocket:
@@ -77,16 +73,7 @@ spec:
       - name: sonarr-config
         secret:
           secretName: sonarr-config
-      - name: complete
+      - name: media
         nfs:
-          path: /volume1/media/complete
+          path: /volume1/media
           server: 192.168.1.21
-      - name: critical-tv
-        nfs:
-          path: /volume1/critical/media/tv
-          server: 192.168.1.21
-      - name: tv
-        nfs:
-          path: /volume1/media/tv
-          server: 192.168.1.21
-
