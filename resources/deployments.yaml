@@ -55,7 +55,9 @@ spec:
           mountPath: /config
         - name: media
           mountPath: /mnt/media
-        resources: {}
+        resources:
+          limits:
+            memory: 4Gi
         readinessProbe:
           tcpSocket:
             port: sonarr
